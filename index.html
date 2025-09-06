@@ -69,7 +69,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button" id="openModalBtn" type="button">Замовити послугу</button>
+          <button class="button" data-modal-open type="button">Замовити послугу</button>
         </div>
       </section>
       <section class="features">
@@ -401,7 +401,7 @@
         <div class="footer-email">
           <h2 class="emailsreceivetitle">Підписатись на розсилку</h2>
           <form class="footer-form" action="">
-            <input class="emails" type="email" placeholder="E-mail"></input>
+            <input class="emails" type="email" placeholder="E-mail">
             <button class="footer-button" type="button">
               Підписатись 
               <svg class="footer-email-icon" width="24" height="24">
@@ -412,11 +412,14 @@
       </div>
     </div>
     </footer>
+    
      <!-- Modal -->
+      <div data-modal class="backdrop is-hidden">
         <div id="modal" class="modal">
           <div class="modal-content">
-            <button class="modal-close-btn" type="button" id="closeModal">
-              <span class="close">&times;</span>
+            <button class="modal-close-btn" type="button" data-modal-close>
+              <!-- <span class="close">&times;</span> -->
+              <span class="close">x</span>
             </button>
             <h3 class="modal-text">Залиште свої дані, ми вам передзвонимо</h3>
             <form class="modal-form">
@@ -456,20 +459,22 @@
 </div>
               <label class="label">Коментар</label>
               <textarea class="textarea" ></textarea>
-
+              <div class="modal-pl">
+<input class="input-checkbox" type="checkbox" required />
               <label class="checkbox">
-                <input type="checkbox" required />
+                
               
                 
-                <p id="main-text-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" id="secondary-text-checkbox">Умови договору</a> </p>
+                 Погоджуюся з розсилкою та приймаю 
+                  <a href="#" id="secondary-text-checkbox">Умови договору</a> 
 
               </label>
-
+</div>
               <button class="button-modal" type="submit">Відправити</button>
             </form>
           </div>
         </div>
-
+</div>
 <script src="./script.js"></script>
   </body>
 </html>
