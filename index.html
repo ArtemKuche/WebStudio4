@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,13 +34,13 @@
         </a>
         <nav class="nav">
           <ul class="menu">
-            <li class="menu-item">
+            <li class="menu-item animate__animated animate__backInDown">
               <a class="menu-link menu-link-current" href="#" >Студія</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item animate__animated animate__backInDown animate__delay-1s">
               <a class="menu-link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item animate__animated animate__backInDown animate__delay-2s">
               <a class="menu-link" href="#">Контакти</a>
             </li>
           </ul>
@@ -126,7 +132,7 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="services-list">
-            <li class="services-item">
+            <li class="services-item" data-aos="flip-down"  data-aos-duration="3000">
               <img
                 class="sevices-picture"
                 src="./images/we_do1.jpg"
@@ -134,7 +140,7 @@
               />
               <div class="image-caption">Десктопні додатки</div>
             </li>
-            <li class="services-item">
+            <li class="services-item" data-aos="flip-down"  data-aos-duration="3000">
               <img
                 class="sevices-picture"
                 src="./images/we_do2.jpg"
@@ -142,13 +148,13 @@
               />
               <div class="image-caption">Мобільні додатки</div>
             </li>
-            <li class="services-item">
+            <li class="services-item " data-aos="flip-down"  data-aos-duration="3000">
               <img
                 class="sevices-picture"
                 src="./images/we_do3.jpg"
                 alt="The view on the tablet"
               />
-              <div class="image-caption">Дизайнерські рішення</div>
+              <div class="image-caption ">Дизайнерські рішення</div>
             </li>
           </ul>
         </div>
@@ -157,7 +163,7 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-item">
+            <li class="team-item" data-aos="flip-up" data-aos-duration="3000">
               <img
                 class="team-img"
                 src="./images/ihor.jpg"
@@ -167,7 +173,7 @@
                 <h3 class="team-member">Ігор Дем'яненко</h3>
                 <p class="team-position">Product Designer</p>
                 <ul class="social-list">
-                  <li class="social-item">
+                  <li class="social-item" >
                     <a class="social-link" href="">
                       <svg class="social-icon" width="20" height="20">
                         <use
@@ -200,7 +206,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="flip-up" data-aos-duration="3000">
               <img
                 class="team-img"
                 src="./images/olha.jpg"
@@ -243,7 +249,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="flip-up" data-aos-duration="3000">
               <img
                 class="team-img"
                 src="./images/mykola.jpg"
@@ -286,7 +292,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="flip-up" data-aos-duration="3000">
               <img
                 class="team-img"
                 src="./images/mike.jpg"
@@ -471,5 +477,9 @@
         </div>
 </div>
 <script src="./script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </body>
 </html>
